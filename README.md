@@ -30,6 +30,16 @@ python 3_testing.py --data_path data-env2/testing --model_path data-env2-trainin
 ```
 
 ## Reproducing all results
+sudo apt update
+sudo apt install aptitude
+sudo aptitude install wget cmake g++ m4 xz-utils libgmp-dev unzip zlib1g-dev libboost-program-options-dev libboost-serialization-dev libboost-regex-dev libboost-iostreams-dev libtbb-dev libreadline-dev pkg-config git liblapack-dev libgsl-dev flex bison libcliquer-dev gfortran file dpkg-dev libopenblas-dev rpm
+
+wget https://www.scipopt.org/download/release/SCIPOptSuite-8.0.4-Linux-ubuntu.deb
+sudo dpkg -i ./SCIPOptSuite-8.0.4-Linux-ubuntu.deb 
+
+pip install PySCIPOpt==4.2.0
+
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple tensorflow-gpu==2.6.0
 
 To reproduce all the results, please follow the commands in "cmds.txt"
 
